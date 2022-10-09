@@ -13,17 +13,10 @@ input {
 	color: #ffffff;
 	border: solid;
 	border-color: #1a1a1a;
-	padding: 10px;
+	border-radius: 5px;
+	padding: 7px;
 	width: 500px;
-}
-
-button {
-	background-color: #111111;
-	color: #ffffff;
-	border: solid;
-	border-color: #1a1a1a;
-	padding: 10px;
-	/*width: 500px;*/
+	font-size: 15px;
 }
 
 .content {

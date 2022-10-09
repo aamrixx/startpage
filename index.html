@@ -3,14 +3,18 @@
 	<head>
 		<title>startpage</title>
 		<link rel="stylesheet" href="style.css"> 
-		<script src="search.js"></script>
+		<script>
+			function search() {
+				var query = document.getElementById("searchbox").value;
+				window.location.href = "https://google.com/search?q=" + query.replace(/ /g, "+");
+			}
+		</script>
 	</head>
 	<body>
 		<div class="content">
 			<center>
 				<img src="mario.png"><br><br>
-				<input type="text" id="searchbox"/>
-				<button type="submit" id="searchbtn" value="Submit" onclick="search();">🔍</button> 
+				<input type="text" placeholder="🔍 Search here" onclick="this.select()" onKeyDown="if(event.keyCode==13) search();" id="searchbox"/>
 			</center>
 		</div>
 	</body>
